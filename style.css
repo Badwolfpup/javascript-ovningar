@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; max-width: 800px; margin: 2em auto; }
+h1 { text-align: center; }
+ol { font-size: 1.2em; }
+a { text-decoration: none; color: #3366cc; }
+a:hover { text-decoration: underline; }
