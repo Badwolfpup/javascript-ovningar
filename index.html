@@ -2,22 +2,24 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript Övningar</title>
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <h1>JavaScript Övningar</h1>
-  <ol>
-    <li>Uppgift 1: <a href="exercises/1/index.html">Testa</a> | <a href="exercises/1/solution.html">Lösning</a></li>
-    <li>Uppgift 2: <a href="exercises/2/index.html">Testa</a> | <a href="exercises/2/solution.html">Lösning</a></li>
-    <li>Uppgift 3: <a href="exercises/3/index.html">Testa</a> | <a href="exercises/3/solution.html">Lösning</a></li>
-    <li>Uppgift 4: <a href="exercises/4/index.html">Testa</a> | <a href="exercises/4/solution.html">Lösning</a></li>
-    <li>Uppgift 5: <a href="exercises/5/index.html">Testa</a> | <a href="exercises/5/solution.html">Lösning</a></li>
-    <li>Uppgift 6: <a href="exercises/6/index.html">Testa</a> | <a href="exercises/6/solution.html">Lösning</a></li>
-    <li>Uppgift 7: <a href="exercises/7/index.html">Testa</a> | <a href="exercises/7/solution.html">Lösning</a></li>
-    <li>Uppgift 8: <a href="exercises/8/index.html">Testa</a> | <a href="exercises/8/solution.html">Lösning</a></li>
-    <li>Uppgift 9: <a href="exercises/9/index.html">Testa</a> | <a href="exercises/9/solution.html">Lösning</a></li>
-    <li>Uppgift 10: <a href="exercises/10/index.html">Testa</a> | <a href="exercises/10/solution.html">Lösning</a></li>
-  </ol>
+  <header class="spa-header">
+    <h1 id="spa-title">JavaScript Övningar</h1>
+    <div class="spa-header-controls">
+      <label for="exerciseSelector" class="visually-hidden">Välj övning:</label>
+      <select id="exerciseSelector">
+        <option value="">Välj övning</option>
+      </select>
+      <button id="toggleView" type="button" disabled>Visa Kodlösning</button>
+    </div>
+  </header>
+  <main id="exerciseArea" class="spa-main">
+    <p>Välj en övning i rullgardinsmenyn ovan för att börja.</p>
+  </main>
 </body>
 </html>
