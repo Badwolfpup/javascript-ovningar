@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Uppgift 5 – Lösning</title>
+  <link rel="stylesheet" href="../solution.css">
+</head>
+<body>
+  <h2>Uppgift 5: Klickräknare – Lösning</h2>
+  <a href="index.html">Testa övningen</a>
+  <div class="code-section">
+    <h3>HTML</h3>
+    <pre><code>&lt;button id="knapp"&gt;Klicka mig&lt;/button&gt;
+&lt;p id="antal"&gt;Antal klick: 0&lt;/p&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</code></pre>
+  </div>
+  <div class="code-section">
+    <h3>CSS</h3>
+    <pre><code>body { text-align: center; margin-top: 50px; }
+</code></pre>
+  </div>
+  <div class="code-section">
+    <h3>JavaScript</h3>
+    <pre><code>let klick = 0;
+const knapp = document.getElementById("knapp");
+knapp.addEventListener("click", function() {
+  klick++;
+  document.getElementById("antal").innerText = "Antal klick: " + klick;
+});
+</code></pre>
+  </div>
+</body>
+</html>

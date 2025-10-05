@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Uppgift 4 – Lösning</title>
+  <link rel="stylesheet" href="../solution.css">
+</head>
+<body>
+  <h2>Uppgift 4: Visa/Göm text – Lösning</h2>
+  <a href="index.html">Testa övningen</a>
+  <div class="code-section">
+    <h3>HTML</h3>
+    <pre><code>&lt;button id="toggle"&gt;Visa/Göm text&lt;/button&gt;
+&lt;p id="texten"&gt;Hej, jag syns!&lt;/p&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</code></pre>
+  </div>
+  <div class="code-section">
+    <h3>CSS</h3>
+    <pre><code>body { text-align: center; margin-top: 50px; }
+</code></pre>
+  </div>
+  <div class="code-section">
+    <h3>JavaScript</h3>
+    <pre><code>const toggle = document.getElementById("toggle");
+const texten = document.getElementById("texten");
+toggle.addEventListener("click", function() {
+  if (texten.style.display === "none") {
+    texten.style.display = "block";
+  } else {
+    texten.style.display = "none";
+  }
+});
+</code></pre>
+  </div>
+</body>
+</html>

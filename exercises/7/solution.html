@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Uppgift 7 – Lösning</title>
+  <link rel="stylesheet" href="../solution.css">
+</head>
+<body>
+  <h2>Uppgift 7: Gissa talet – Lösning</h2>
+  <a href="index.html">Testa övningen</a>
+  <div class="code-section">
+    <h3>HTML</h3>
+    <pre><code>&lt;input id="gissning" type="number" placeholder="1-10"&gt;
+&lt;button id="knapp"&gt;Gissa&lt;/button&gt;
+&lt;p id="svar"&gt;&lt;/p&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</code></pre>
+  </div>
+  <div class="code-section">
+    <h3>CSS</h3>
+    <pre><code>body { text-align: center; margin-top: 50px; }
+</code></pre>
+  </div>
+  <div class="code-section">
+    <h3>JavaScript</h3>
+    <pre><code>let hemligt = Math.floor(Math.random()*10)+1;
+const knapp = document.getElementById("knapp");
+knapp.addEventListener("click", function() {
+  let giss = parseInt(document.getElementById("gissning").value);
+  if (giss === hemligt) {
+    document.getElementById("svar").innerText = "Rätt!";
+  } else {
+    document.getElementById("svar").innerText = "Fel, försök igen.";
+  }
+});
+</code></pre>
+  </div>
+</body>
+</html>
